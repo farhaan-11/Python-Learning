@@ -66,3 +66,22 @@ if input_string.isdigit():
     print("You are an adult.")
 else:
     print("Invalid input. Please enter a valid age.")    
+
+
+
+
+# filter_odd_numbers = [num for num in nums if num % 2 == 0]
+
+# print(filter_odd_numbers)
+
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#  covert into {1:1, 2:4, 3:9, 4:16, 5:25, 6:36, 7:49, 8:64, 9:81}
+squared_nums = {num: num**2 for num in nums}
+print(squared_nums)
+
+student = {"name": "Farhan", "age": 25, "city": "Hyderabad"}
+
+# print all keys and values in the dictionary
+for key, value in student.items():
+    print(f"{key}: {value}")
