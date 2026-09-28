@@ -240,31 +240,7 @@
     }
   },
   {
-    "id": 13,
-    "name": "Bluetooth Speaker",
-    "category": "electronics",
-    "brand": "JBL",
-    "price": 3499,
-    "discount_percent": 15,
-    "stock": 25,
-    "in_stock": true,
-    "rating": 4.5,
-    "tags": [
-      "speaker",
-      "bluetooth",
-      "audio"
-    ],
-    "seller": {
-      "name": "TechHub",
-      "city": "Hyderabad"
-    }
-  },
-  {
-    "id": 13,
-    "name": "Test Item"
-  },
-  {
-    "id": 13,
-    "name": "Test Item"
+    "id": 30,
+    "name": "mobile le lo"
   }
 ]
