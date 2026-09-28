@@ -1,0 +1,270 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "category": "electronics",
+    "brand": "Logitech",
+    "price": 799,
+    "discount_percent": 10,
+    "stock": 45,
+    "in_stock": true,
+    "rating": 4.4,
+    "tags": [
+      "mouse",
+      "wireless",
+      "office"
+    ],
+    "seller": {
+      "name": "TechHub",
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "category": "electronics",
+    "brand": "Redragon",
+    "price": 2499,
+    "discount_percent": 15,
+    "stock": 12,
+    "in_stock": true,
+    "rating": 4.6,
+    "tags": [
+      "keyboard",
+      "gaming",
+      "rgb"
+    ],
+    "seller": {
+      "name": "GadgetWorld",
+      "city": "Bengaluru"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Noise Cancelling Headphones",
+    "category": "electronics",
+    "brand": "Sony",
+    "price": 8999,
+    "discount_percent": 20,
+    "stock": 0,
+    "in_stock": false,
+    "rating": 4.8,
+    "tags": [
+      "headphones",
+      "audio",
+      "wireless"
+    ],
+    "seller": {
+      "name": "TechHub",
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Running Shoes",
+    "category": "fashion",
+    "brand": "Nike",
+    "price": 4599,
+    "discount_percent": 25,
+    "stock": 30,
+    "in_stock": true,
+    "rating": 4.3,
+    "tags": [
+      "shoes",
+      "running",
+      "sports"
+    ],
+    "seller": {
+      "name": "StyleStreet",
+      "city": "Delhi"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Cotton T-Shirt",
+    "category": "fashion",
+    "brand": "Puma",
+    "price": 899,
+    "discount_percent": 0,
+    "stock": 120,
+    "in_stock": true,
+    "rating": 3.9,
+    "tags": [
+      "tshirt",
+      "cotton",
+      "casual"
+    ],
+    "seller": {
+      "name": "StyleStreet",
+      "city": "Delhi"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Denim Jacket",
+    "category": "fashion",
+    "brand": "Levis",
+    "price": 3299,
+    "discount_percent": 30,
+    "stock": 8,
+    "in_stock": true,
+    "rating": 4.5,
+    "tags": [
+      "jacket",
+      "denim",
+      "winter"
+    ],
+    "seller": {
+      "name": "UrbanWear",
+      "city": "Mumbai"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Atomic Habits",
+    "category": "books",
+    "brand": "Penguin",
+    "price": 499,
+    "discount_percent": 5,
+    "stock": 200,
+    "in_stock": true,
+    "rating": 4.9,
+    "tags": [
+      "self-help",
+      "habits",
+      "bestseller"
+    ],
+    "seller": {
+      "name": "BookNest",
+      "city": "Chennai"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Clean Code",
+    "category": "books",
+    "brand": "Pearson",
+    "price": 1299,
+    "discount_percent": 0,
+    "stock": 0,
+    "in_stock": false,
+    "rating": 4.7,
+    "tags": [
+      "programming",
+      "software",
+      "coding"
+    ],
+    "seller": {
+      "name": "BookNest",
+      "city": "Chennai"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Stainless Steel Water Bottle",
+    "category": "home",
+    "brand": "Milton",
+    "price": 649,
+    "discount_percent": 12,
+    "stock": 75,
+    "in_stock": true,
+    "rating": 4.2,
+    "tags": [
+      "bottle",
+      "steel",
+      "gym"
+    ],
+    "seller": {
+      "name": "HomeMart",
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "id": 10,
+    "name": "LED Desk Lamp",
+    "category": "home",
+    "brand": "Philips",
+    "price": 1199,
+    "discount_percent": 18,
+    "stock": 22,
+    "in_stock": true,
+    "rating": 4.1,
+    "tags": [
+      "lamp",
+      "led",
+      "study"
+    ],
+    "seller": {
+      "name": "HomeMart",
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Yoga Mat",
+    "category": "sports",
+    "brand": "Decathlon",
+    "price": 999,
+    "discount_percent": 10,
+    "stock": 40,
+    "in_stock": true,
+    "rating": 4.0,
+    "tags": [
+      "yoga",
+      "fitness",
+      "mat"
+    ],
+    "seller": {
+      "name": "FitZone",
+      "city": "Pune"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Badminton Racket",
+    "category": "sports",
+    "brand": "Yonex",
+    "price": 2799,
+    "discount_percent": 22,
+    "stock": 5,
+    "in_stock": true,
+    "rating": 4.6,
+    "tags": [
+      "badminton",
+      "racket",
+      "sports"
+    ],
+    "seller": {
+      "name": "FitZone",
+      "city": "Pune"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Bluetooth Speaker",
+    "category": "electronics",
+    "brand": "JBL",
+    "price": 3499,
+    "discount_percent": 15,
+    "stock": 25,
+    "in_stock": true,
+    "rating": 4.5,
+    "tags": [
+      "speaker",
+      "bluetooth",
+      "audio"
+    ],
+    "seller": {
+      "name": "TechHub",
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Test Item"
+  },
+  {
+    "id": 13,
+    "name": "Test Item"
+  }
+]
