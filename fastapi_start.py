@@ -2,8 +2,13 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-#  for server start uvicorn fastapi_start:app --reload
+#  for server start uvicorn fastapi_start:app --reload and fastapi dev fastapi_start.py   
 
-@app.get("/health")
-def health():
-    return {"status": "server start ho gya ab check kro"}
+@app.get('/')
+def home():
+    return " Hii from server"
+
+
+@app.get("/about")
+def about():
+    return " mai fast api server hu tum apna route bna skte ho "
