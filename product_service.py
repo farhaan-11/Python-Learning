@@ -104,8 +104,29 @@ def update_product(product_id,data_for_update:ProductUpdate):
 
 ise_update_krna_hai = ProductUpdate(price=91001)
 
+# if __name__ == "__main__":
+
+#     one_product = update_product("6abbe0e74ac74ee4ed9c8d30",ise_update_krna_hai)
+#     print("one_product", one_product)
+#     print(f"data type : {type(one_product)}")   
+# 
+# 
+
+#  delete method---
+
+def delete_product(product_id):
+     if not ObjectId.is_valid(product_id):
+                 return {"message":"product id Invalid"}
+     deleted_doc= products_collection.find_one_and_delete({"_id": ObjectId(product_id)})
+
+     if deleted_doc is None:
+         return {"message":"document not found"}
+     else:
+         return {"message":"documnet deleted","documnet":format_product(deleted_doc)}
+
+
 if __name__ == "__main__":
 
-    one_product = update_product("6abbe0e74ac74ee4ed9c8d30",ise_update_krna_hai)
+    one_product = delete_product("6abbe0e74ac74ee4ed9c8d30")
     print("one_product", one_product)
-    print(f"data type : {type(one_product)}")    
+    print(f"data type : {type(one_product)}")
