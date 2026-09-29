@@ -218,5 +218,25 @@
       "name": "FitZone",
       "city": "Pune"
     }
+  },
+  {
+    "id": 12,
+    "name": "Badminton Racket",
+    "category": "sports",
+    "brand": "Yonex",
+    "price": 2799,
+    "discount_percent": 22,
+    "stock": 5,
+    "in_stock": true,
+    "rating": 4.6,
+    "tags": [
+      "badminton",
+      "racket",
+      "sports"
+    ],
+    "seller": {
+      "name": "FitZone",
+      "city": "Pune"
+    }
   }
 ]

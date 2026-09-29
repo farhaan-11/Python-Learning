@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 from mockData import products
+from database import db
 
 import json
 from pathlib import Path
