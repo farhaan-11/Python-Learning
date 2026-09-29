@@ -221,26 +221,22 @@
   },
   {
     "id": 12,
-    "name": "Badminton Racket",
+    "name": "Tennis cricket bat",
     "category": "sports",
     "brand": "Yonex",
-    "price": 2799,
-    "discount_percent": 22,
-    "stock": 5,
+    "price": 2999,
+    "discount_percent": 15,
+    "stock": 15,
     "in_stock": true,
-    "rating": 4.6,
+    "rating": 4.8,
     "tags": [
       "badminton",
       "racket",
       "sports"
     ],
     "seller": {
-      "name": "FitZone",
-      "city": "Pune"
+      "name": "FitZone updated ",
+      "city": "delhi"
     }
-  },
-  {
-    "id": 30,
-    "name": "mobile le lo"
   }
 ]

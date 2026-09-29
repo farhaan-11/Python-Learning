@@ -76,17 +76,6 @@ def greet_to_user(request:Request):
 
 
 
-# class Product(BaseModel):
-#     name:str
-#     category:str
-#     brand:str
-#     price:int
-#     discount_percent:str
-#     stock:str
-#     in_stock:str
-#     rating:str
-#     tags:str
-#     seller:str
 
 # pahle file read krte hai 
 
@@ -95,8 +84,23 @@ with open("products.json", "r") as f:
 
 
 class Product(BaseModel):
-    id:int 
-    name:str = None
+
+    id: int = 100
+    name: Optional[str] = None
+    category: Optional[str] = None
+    brand: Optional[str] = None
+    price: int = 399
+    discount_percent: int = 15
+    stock: int = 10
+    in_stock: bool = True
+    rating: float = 3.5
+    tags: List[str]
+    seller: Dict[str, str]
+    # "seller": {
+    #   "name": "FitZone",
+    #   "city": "Pune"
+    # }
+  
 
 # post request
 @app.post("/products")
@@ -111,7 +115,23 @@ def insert_product(data:Product):
     with open("products.json","w") as f:
         json.dump(products, f, indent=2)
 
-    return {"message ": " requets sun rha hu", "data":products}
+    return {"message ": " product created succesfully", "data":products}
+
+
+
+@app.put("/products/{product_id}")
+def update_products(data:Product, product_id: int):
+    payload_data=dict(data)
+    print(f"update product data : {payload_data}")
+   
+    print("product_id",product_id)
+    for idx, p in enumerate(products):
+        print("running")
+        if(p["id"]==product_id):
+            products[idx] = payload_data
+    with open ("products.json","a") as f:
+        json.dump(products, f, indent=2)        
+    return {"message":" product updated", "updated data":products}
 
 
 
