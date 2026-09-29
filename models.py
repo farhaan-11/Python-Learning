@@ -17,3 +17,16 @@ class ProductCreate(BaseModel):
 
 class ProductOut(ProductCreate):
     id: str
+
+
+class ProductUpdate(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    brand: Optional[str] = None
+    price: Optional[int] = None
+    discount_percent: Optional[int] = None
+    stock: Optional[int] = None
+    in_stock: Optional[bool] = None
+    rating: Optional[float] = None
+    tags: Optional[List[str]] = None
+    seller: Optional[Dict[str, str]] = None
