@@ -218,25 +218,5 @@
       "name": "FitZone",
       "city": "Pune"
     }
-  },
-  {
-    "id": 12,
-    "name": "Tennis cricket bat",
-    "category": "sports",
-    "brand": "Yonex",
-    "price": 2999,
-    "discount_percent": 15,
-    "stock": 15,
-    "in_stock": true,
-    "rating": 4.8,
-    "tags": [
-      "badminton",
-      "racket",
-      "sports"
-    ],
-    "seller": {
-      "name": "FitZone updated ",
-      "city": "delhi"
-    }
   }
 ]

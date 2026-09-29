@@ -134,7 +134,16 @@ def update_products(data:Product, product_id: int):
     return {"message":" product updated", "updated data":products}
 
 
+@app.delete("/products/{product_id}")
+def delete_product(product_id:int):
+    for idx, p in enumerate(products):
+        if (product_id==p["id"]):
+            products.__delitem__(idx)
+            with open("products.json", "w") as f:
+                json.dump(products, f, indent=2)
+            return {"message": "product deleted", "data": products}
 
+    return {"message": "product not found"}
 
 
 
