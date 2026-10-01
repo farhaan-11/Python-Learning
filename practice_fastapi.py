@@ -5,7 +5,7 @@ from pymongo import ReturnDocument, ASCENDING , DESCENDING
 from typing import Annotated
 import json
 
-from models import ProductListResponse, ProductCreate, ProductOut, ProductUpdate, ProductOutQuery,ProductFilter
+from models import CreateManyProductsResponse, CreateProductResponse, ProductListResponse, ProductCreate, ProductOut, ProductUpdate, ProductOutQuery,ProductFilter
 
 
 if db is None:
@@ -93,3 +93,32 @@ def get_products_by_query(filters: Annotated[ProductFilter, Query()]):
     return 
  
     # return {"message" : " api is working"}
+
+
+
+#  create a document -----
+@app.post('/products',response_model=CreateProductResponse, status_code=201)
+def create_document(body:ProductCreate):
+
+    # print(f"body : {dict(body)}")
+    doc= body.model_dump()
+
+    result=products_collection.insert_one(doc)
+
+
+    return {"message":"Inserted", "data":doc}
+
+
+#  create many documents -----
+@app.post('/products/bulk', response_model=CreateManyProductsResponse, status_code=201)
+def create_many_documents(body: list[ProductCreate]):
+
+    if not body:
+        raise HTTPException(status_code=400, detail="products ki list khali hai")
+
+    docs = [product.model_dump() for product in body]
+
+    products_collection.insert_many(docs)   # har doc mein "_id" aa gaya
+
+    return {"message": "Inserted", "total": len(docs), "data": docs}
+

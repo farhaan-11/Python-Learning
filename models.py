@@ -60,4 +60,18 @@ class ProductListResponse(BaseModel):
     total: int
     data: list[ProductOutQuery]
 
+
+
+class CreateProductResponse(BaseModel):
+    message: str
+    data: ProductOut
+
+
+class CreateManyProductsResponse(BaseModel):
+    message: str
+    total: int
+    data: list[ProductOut]
+
+
+
     
