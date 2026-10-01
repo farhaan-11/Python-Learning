@@ -1,5 +1,5 @@
 from database import db
-from models import ProductCreate,ProductOut, ProductUpdate
+from models import ProductCreate, ProductOut, ProductUpdate
 from bson import ObjectId
 from pymongo import ReturnDocument
 
